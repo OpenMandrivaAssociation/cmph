@@ -10,6 +10,8 @@ Group:		System/Libraries
 License:	LGPL
 URL:		http://cmph.sourceforge.net/
 Source0:	http://sourceforge.net/projects/cmph/files/cmph/cmph-%{version}/cmph-%{version}.tar.gz
+Patch0:		cmph-1.1-no_examples.diff
+Patch1:		cmph-1.1-no_-Werror.diff
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
@@ -57,8 +59,11 @@ This package contains the development files for %{name}
 %prep
 
 %setup -q -n %{name}-%{version}
+%patch0 -p0
+%patch1 -p0
 
 %build
+autoreconf -fi
 
 %configure2_5x
 
