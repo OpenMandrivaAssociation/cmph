@@ -100,3 +100,14 @@ rm -rf %{buildroot}
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/cmph.pc
 
+
+
+%changelog
+* Tue May 17 2011 Oden Eriksson <oeriksson@mandriva.com> 1.1-1mdv2011.0
++ Revision: 675441
+- added some small fixes
+- import cmph
+
+
+* Tue May 17 2011 Oden Eriksson <oeriksson@mandriva.com> 1.1-1mdv2010.2
+- initial Mandriva package
