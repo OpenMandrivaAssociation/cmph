@@ -4,12 +4,12 @@
 
 Summary:	C Minimal Perfect Hashing Library
 Name:		cmph
-Version:	1.1
-Release:	%mkrel 1
+Version:	2.0
+Release:	1
 Group:		System/Libraries
 License:	LGPL
 URL:		http://cmph.sourceforge.net/
-Source0:	http://sourceforge.net/projects/cmph/files/cmph/cmph-%{version}/cmph-%{version}.tar.gz
+Source0:	https://sourceforge.net/projects/cmph/files/cmph/%{name}-%{version}.tar.gz
 Patch0:		cmph-1.1-no_examples.diff
 Patch1:		cmph-1.1-no_-Werror.diff
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -111,3 +111,4 @@ rm -rf %{buildroot}
 
 * Tue May 17 2011 Oden Eriksson <oeriksson@mandriva.com> 1.1-1mdv2010.2
 - initial Mandriva package
+
