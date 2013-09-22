@@ -1,0 +1,11 @@
+--- configure.ac.orig	2012-06-09 07:32:58.000000000 +0400
++++ configure.ac	2013-09-22 12:34:10.000000000 +0400
+@@ -31,7 +31,7 @@
+ dnl Checks for libraries.
+ LT_LIB_M  
+ LDFLAGS="$LIBM $LDFLAGS"
+-CFLAGS="-Wall"
++CFLAGS="$CFLAGS"
+ 
+ AC_PROG_CXX
+ CXXFLAGS="-Wall -Wno-unused-function -DNDEBUG -O3 -fomit-frame-pointer $CXXFLAGS"

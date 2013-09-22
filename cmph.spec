@@ -4,15 +4,14 @@
 
 Summary:	C Minimal Perfect Hashing Library
 Name:		cmph
-Version:	1.1
-Release:	%mkrel 1
+Version:	2.0
+Release:	1
 Group:		System/Libraries
 License:	LGPL
 URL:		http://cmph.sourceforge.net/
-Source0:	http://sourceforge.net/projects/cmph/files/cmph/cmph-%{version}/cmph-%{version}.tar.gz
-Patch0:		cmph-1.1-no_examples.diff
-Patch1:		cmph-1.1-no_-Werror.diff
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Source0:	https://sourceforge.net/projects/cmph/files/cmph/%{name}-%{version}.tar.gz
+Patch0:		cmph-2.0-no_examples.diff
+Patch1:		cmph-2.0-no_-Werror.diff
 
 %description
 C Minimal Perfect Hashing Library is a portable LGPL library to create and to
@@ -73,28 +72,20 @@ autoreconf -fi
 make check
 
 %install
-rm -rf %{buildroot}
-
 %makeinstall_std
 
 # cleanup
 rm -f %{buildroot}%{_libdir}/*.*a
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/cmph
 %{_mandir}/man1/cmph.1*
 
 %files -n %{libname}
-%defattr(-,root,root)
 %doc AUTHORS README COPYING NEWS README
 %{_libdir}/*.so.%{major}*
 
 %files -n %{develname}
-%defattr(-,root,root)
 %doc ChangeLog
 %{_includedir}/*
 %{_libdir}/*.so
@@ -111,3 +102,4 @@ rm -rf %{buildroot}
 
 * Tue May 17 2011 Oden Eriksson <oeriksson@mandriva.com> 1.1-1mdv2010.2
 - initial Mandriva package
+

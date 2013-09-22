@@ -1,0 +1,8 @@
+--- Makefile.am.orig	2012-06-08 17:56:19.000000000 +0400
++++ Makefile.am	2013-09-22 12:32:20.000000000 +0400
+@@ -1,4 +1,4 @@
+-SUBDIRS = src tests examples man $(CXXMPH)
++SUBDIRS = src tests man $(CXXMPH)
+ EXTRA_DIST = cmph.spec configure.ac cmph.pc.in cxxmph.pc.in LGPL-2 MPL-1.1
+ pkgconfig_DATA = cmph.pc
+ if USE_CXXMPH
