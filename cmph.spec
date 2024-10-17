@@ -8,7 +8,7 @@ Version:	2.0
 Release:	2
 Group:		System/Libraries
 License:	LGPL
-URL:		http://cmph.sourceforge.net/
+URL:		https://cmph.sourceforge.net/
 Source0:	https://sourceforge.net/projects/cmph/files/cmph/%{name}-%{version}.tar.gz
 Patch0:		cmph-2.0-no_examples.diff
 Patch1:		cmph-2.0-no_-Werror.diff
