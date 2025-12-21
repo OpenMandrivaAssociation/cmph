@@ -13,6 +13,11 @@ Source0:	https://sourceforge.net/projects/cmph/files/cmph/%{name}-%{version}.tar
 Patch0:		cmph-2.0-no_examples.diff
 Patch1:		cmph-2.0-no_-Werror.diff
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 C Minimal Perfect Hashing Library is a portable LGPL library to create and to
 work with minimal perfect hashing functions. The library encapsulates the
