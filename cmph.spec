@@ -4,14 +4,14 @@
 
 Summary:	C Minimal Perfect Hashing Library
 Name:		cmph
-Version:	2.0
-Release:	2
+Version:	2.0.2
+Release:	1
 Group:		System/Libraries
 License:	LGPL
 URL:		https://cmph.sourceforge.net/
 Source0:	https://sourceforge.net/projects/cmph/files/cmph/%{name}-%{version}.tar.gz
-Patch0:		cmph-2.0-no_examples.diff
-Patch1:		cmph-2.0-no_-Werror.diff
+Patch0:		cmph-2.0.2-no_examples.diff
+Patch1:		cmph-2.0.2-no_-Werror.diff
 
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -63,8 +63,8 @@ This package contains the development files for %{name}
 %prep
 
 %setup -q -n %{name}-%{version}
-%patch0 -p0
-%patch1 -p0
+%patch -P0 -p0
+%patch -P1 -p0
 
 %build
 autoreconf -fi

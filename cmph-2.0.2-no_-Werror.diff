@@ -1,0 +1,11 @@
+--- configure.ac.orig
++++ configure.ac
+@@ -31,7 +31,7 @@
+ dnl Checks for libraries.
+ LT_LIB_M
+ LDFLAGS="$LIBS $LIBM $LDFLAGS"
+-CFLAGS="-Wall $CFLAGS"
++CFLAGS="$CFLAGS"
+ 
+ AC_PROG_CXX
+ CXXFLAGS="-Wall -Wno-unused-function -DNDEBUG -O3 -fomit-frame-pointer $CXXFLAGS"
